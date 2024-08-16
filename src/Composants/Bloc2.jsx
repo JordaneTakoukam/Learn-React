@@ -5,14 +5,14 @@ import { user } from "../Pages/PageTdWithComponants";
 function Bloc2() {
     return (
         <div>
-            <div>
+            <div className="">
 
                 <TitreProfile
                     icone={<PhotoIcon className="h-5 w-5 text-indigo-500" />}
                     titre={'Profile picture'}
                 />
 
-                <div className="flex items-center gap-x-5 mt-3">
+                <div className="flex flex-col lg:flex-row items-center gap-x-5 mt-3">
                     {/* image */}
                     <div className="bg-black h-32 w-32 rounded-full">
                         <img
@@ -24,7 +24,7 @@ function Bloc2() {
 
 
 
-                    <div className="flex gap-x-2">
+                    <div className="flex flex-col lg:flex-row gap-x-2">
                         {/*  */}
                         <button className="bg-indigo-500 text-white rounded-lg px-4 py-2 font-semibold">
                             Change picture

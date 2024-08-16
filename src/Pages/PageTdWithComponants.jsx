@@ -11,8 +11,24 @@ export const user = {
 
 function PageTdWithComponants() {
     return (
-        <div className=" max-w-3xl  mx-auto mt-10 p-8 rounded-xl border border-gray-400
-         shadow-2xl space-y-14">
+
+        // normal
+        // <div className=" 
+        // w-full 
+        // lg:max-w-3xl  lg:mx-auto mt-10 p-2 lg:p-8 rounded-xl border border-gray-400
+        //  shadow-2xl space-y-14
+        //  mx-
+        //  ">
+
+        // avec responsive
+
+        <div className=" 
+        w-full
+        lg:max-w-3xl  lg:mx-auto my-10 p-2 lg:p-8 rounded-xl border border-gray-400
+         shadow-2xl space-y-14
+         mx-5
+         flex flex-col items-start justify-start
+         ">
 
             {/* bloc1 */}
             <Bloc1 />

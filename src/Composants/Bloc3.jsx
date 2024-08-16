@@ -17,7 +17,7 @@ function Bloc3() {
                     titre={'Personal informations'}
                 />
 
-                <div className="flex mt-4 gap-x-5">
+                <div className="flex flex-col lg:flex-row mt-4 gap-x-5">
                     <div className="flex flex-col w-full gap-y-1">
                         {/* input 1 */}
                         <label className="font-bold">First Name</label>
