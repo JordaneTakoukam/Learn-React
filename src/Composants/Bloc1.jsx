@@ -3,8 +3,8 @@ import { user } from "../Pages/PageTdWithComponants";
 
 function Bloc1() {
     return (
-        <div>
-            <div className="flex flex-col lg:flex-row justify-between gap-y-2">
+        <div className="w-full">
+            <div className="flex flex-col lg:flex-row justify-start lg:justify-between gap-y-2">
                 {/* gauche */}
                 <div>
                     <h1 className="font-bold text-xl">Your profile</h1>
