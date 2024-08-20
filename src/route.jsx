@@ -4,12 +4,13 @@ import Page2 from "./Pages/Page2"
 import Page3 from "./Pages/Page3"
 import PageTd from "./Pages/PageTd";
 import PageTdWithComponants from "./Pages/PageTdWithComponants";
+import ListProduit from "./PageCrud/ListProduit";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <PageTdWithComponants />,
+        element: <ListProduit />,
     },
     {
         path: "/page-1",
