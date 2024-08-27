@@ -53,7 +53,7 @@ function ListProduit() {
         setValeur1("");
         setAction('afficher');
 
-        // createToast('Créer avec succès', 0)
+        createToast('Créer avec succès', 0)
 
     }
 
