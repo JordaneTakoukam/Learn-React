@@ -7,12 +7,15 @@ import router from './route.jsx'
 import {
   RouterProvider,
 } from "react-router-dom";
+import { ToastContainer } from 'react-toastify'
 
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ToastContainer />
+
     <RouterProvider router={router} />
   </StrictMode>,
 )

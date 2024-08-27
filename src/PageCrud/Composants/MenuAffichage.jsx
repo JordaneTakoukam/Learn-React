@@ -3,7 +3,7 @@ import { MdAdd, MdDelete, MdEdit } from 'react-icons/md'
 import BoutonCustom from './BoutonCustom'
 import BoutonAction from './BoutonAction'
 
-function MenuAffichage({ products, onClick }) {
+function MenuAffichage({ products, onClick, handleModifier, handleSupprimer }) {
     return (
         <div className='w-full'>
             <h1 className='font-bold pb-5'> Produits Enregistrer : <span className='underline'>{products.length} produits </span></h1>
@@ -16,8 +16,8 @@ function MenuAffichage({ products, onClick }) {
                             <p> {product.title}</p>
 
                             <div className='flex items-center justify-center gap-2'>
-                                <BoutonAction couleur={'bg-blue-500'} icone={<MdEdit />} onClick={() => { }} />
-                                <BoutonAction couleur={'bg-red-500'} icone={<MdDelete />} onClick={() => { }} />
+                                <BoutonAction couleur={'bg-blue-500'} icone={<MdEdit />} onClick={() => { handleModifier(index) }} />
+                                <BoutonAction couleur={'bg-red-500'} icone={<MdDelete />} onClick={() => { handleSupprimer(index) }} />
 
                             </div>
                         </div>
